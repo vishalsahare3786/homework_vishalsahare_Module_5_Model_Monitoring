@@ -1,0 +1,72 @@
+{
+  "id": "0192cdf6-159c-7258-9b82-faaf9a15ddef",
+  "name": "NYC Taxi Data Quality Project",
+  "description": "My project descriotion",
+  "dashboard": {
+    "name": "NYC Taxi Data Quality Project",
+    "panels": [
+      {
+        "type": "evidently:dashboard_panel:DashboardPanelCounter",
+        "id": "0192cdf8-2313-7980-b1e7-3dfa1aa29c59",
+        "title": "NYC taxi data dashboard",
+        "filter": {
+          "metadata_values": {},
+          "tag_values": [],
+          "include_test_suites": false
+        },
+        "size": 2,
+        "agg": "none",
+        "value": null,
+        "text": null
+      },
+      {
+        "type": "evidently:dashboard_panel:DashboardPanelPlot",
+        "id": "0192cdf8-2314-7e26-9ac8-7404714e0385",
+        "title": "Inference Count",
+        "filter": {
+          "metadata_values": {},
+          "tag_values": [],
+          "include_test_suites": false
+        },
+        "size": 1,
+        "values": [
+          {
+            "field_path": "current.number_of_rows",
+            "metric_id": "DatasetSummaryMetric",
+            "metric_fingerprint": null,
+            "metric_args": {},
+            "legend": "count"
+          }
+        ],
+        "plot_type": "bar"
+      },
+      {
+        "type": "evidently:dashboard_panel:DashboardPanelPlot",
+        "id": "0192cdf8-2315-7852-9d33-14f8de56018d",
+        "title": "Number of Missing Values",
+        "filter": {
+          "metadata_values": {},
+          "tag_values": [],
+          "include_test_suites": false
+        },
+        "size": 1,
+        "values": [
+          {
+            "field_path": "current.number_of_missing_values",
+            "metric_id": "DatasetSummaryMetric",
+            "metric_fingerprint": null,
+            "metric_args": {},
+            "legend": "count"
+          }
+        ],
+        "plot_type": "line"
+      }
+    ],
+    "tabs": [],
+    "tab_id_to_panel_ids": {}
+  },
+  "team_id": null,
+  "date_from": null,
+  "date_to": null,
+  "created_at": "2024-10-27T12:31:49.660324"
+}
